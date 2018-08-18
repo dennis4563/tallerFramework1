@@ -15,6 +15,10 @@ class CretaeReporteTable extends Migration
     {
         Schema::create('reporte', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('numero');
+            $table->integer('boolean');
+            $table->date('fecha');
+            $table->text('texto');
             $table->timestamps();
         });
     }
